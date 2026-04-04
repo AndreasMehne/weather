@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Weather</title>
+  <link rel="stylesheet" href="styles.css?v=9">
+</head>
+<body>
+  <header>
+    <h1>Weather</h1>
+    <search>
+      <form id="search-form" role="search">
+        <label for="city-input">Search city</label>
+        <input
+          type="search"
+          id="city-input"
+          name="city"
+          placeholder="City, State / Country…"
+          autocomplete="off"
+        >
+        <button type="submit">Search</button>
+      </form>
+    </search>
+    <p id="search-hint" class="search-hint" aria-live="polite"></p>
+    <div class="unit-toggle" role="group" aria-label="Temperature unit">
+      <button class="unit-opt" id="btn-c" type="button" aria-pressed="true">°C</button>
+      <button class="unit-opt" id="btn-f" type="button" aria-pressed="false">°F</button>
+    </div>
+  </header>
+
+  <main id="weather-results">
+    <p class="placeholder">Enter a city to see the weather.</p>
+  </main>
+
+  <script src="script.js?v=9"></script>
+</body>
+</html>
